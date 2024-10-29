@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mynerve", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f8f9fa;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+}
+
+.header__search {
+  display: flex;
+  background-color: #88aacc;
+  flex: 1;
+  padding: 20px;
+  flex-grow: 3;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  padding: 5px;
+  width: 600px;
+  height: 48px;
+}
+
+.search-icon {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #d9d9d9;
+  border-radius: 20px 0 0 20px;
+}
+
+.search-button {
+  background-color: #32cd32;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #28a745;
+}
+.main-content {
+  display: flex;
+}
+
+@media (max-width: 1100px) {
+  .search-bar {
+    padding: 5px;
+  }
+  .search-input {
+    font-size: 14px;
+  }
+  .search-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 750px) {
+  .search-bar {
+    display: flex;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    padding: 5px;
+    width: 350px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .search-bar {
+    display: flex;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    padding: 5px;
+    width: 200px;
+    height: 48px;
+  }
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0px;
+    font-size: 12px;
+    background-color: #d9d9d9;
+    border-radius: 10px 0 0 10px;
+    width: 50px;
+  }
+  .search-button {
+    background-color: #32cd32;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    display: flex;
+    justify-content: baseline;
+    background-color: #f8f9fa;
+  }
+
+  .header__search {
+    display: flex;
+    background-color: #88aacc;
+    flex: 1;
+    padding: 20px 0px;
+    flex-grow: 3;
+    justify-content: start;
+    align-items: center;
+    margin: 0px;
+  }
+}
